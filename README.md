@@ -16,3 +16,11 @@ Please follow along as the instructor adds automated tests to the API.
 - run the server
 - make a request to the endpoint (may or may not include data)
 - inspect the results to see if it is what I expected
+
+Jest will default to running the code in an environment similar to a web browser. For testing node servers, we need to change that option.
+
+``
+"jest": {
+    "testEnvironment": "node"
+  }
+``
