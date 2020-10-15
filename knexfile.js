@@ -17,7 +17,6 @@ module.exports = {
   },
 
   // database for testing
-
   testing: {
     client: "sqlite3",
     connection: {
@@ -32,6 +31,7 @@ module.exports = {
     },
   },
 
+  // we will use this configuration for Heroku
   production: {
     client: "pg",
     connection: pgConnection,
